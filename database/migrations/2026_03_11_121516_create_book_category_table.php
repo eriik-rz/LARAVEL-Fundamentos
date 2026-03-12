@@ -18,8 +18,8 @@ return new class extends Migration
             $table->unsignedBigInteger('book_id');
             $table->unsignedBigInteger('category_id');
 
-            $table->foreing('book_id')->references('id')->on('books');
-            $table->foreing('category_id')->references('id')->on('categories');
+            $table->foreign('book_id')->references('id')->on('books');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
